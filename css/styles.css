@@ -1,0 +1,107 @@
+body {
+    background-color: #091d30;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana;
+    font-size: 10pt;
+}
+
+#div-main {
+    display: inline-block;
+}
+
+#table-main {
+    border-collapse: collapse;
+    color: #091d30;
+    background-color: white;
+}
+
+#table-main td {
+    border: #091d30 1px solid;
+    max-width: 170px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+}
+
+#table-main .table-header {
+    color: white;
+    background-color: #5b6888;
+    font-size: 12pt;
+}
+
+#table-main .record-cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#table-main .table-record.selected {
+    background-color: #a7eca7;
+}
+
+#table-main .table-record input {
+    border: none;
+    padding: 0;
+    margin: 8px;
+    width: calc(100% - 8px);
+    text-align: center;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: white;
+    outline: 1px solid #091d30;
+}
+
+#table-main .table-record input.jscolor {
+    width: calc(90% - 40px) !important;
+}
+
+#table-main .table-record input[readonly=''] {
+    color: inherit;
+    background-color: inherit;
+    outline: none;
+}
+
+#div-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div-buttons button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#div-buttons div {
+    display: flex;
+}
+
+@media (max-width: 520px) {
+    body {
+        font-size: 7pt;
+    }
+
+    #table-main .table-header {
+        font-size: 9pt;
+    }
+
+    #table-main td {
+        max-width: 97px;
+        width: 97px;
+        height: 30px;
+    }
+
+    #table-main .table-record input{
+        margin: 6px;
+        width: calc(100% - 6px);
+        -webkit-height: 18px;
+    }
+
+    #table-main .record-cell {
+        width: 100%;
+        height: 100%;
+    }
+}
